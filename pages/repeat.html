@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" ng-app="module-repeat">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="../angular-group/angular.js"></script>
+  <script src="../js/module-repeat.js"></script>
+ </head>
+ <body ng-controller="repeatController">
+   <h1 style="font-size:50;text-align:center">Repete</h1>
+   <h2>Book Name</h2>
+   <h3 ng-repeat="book in books">{{book}}</h3>
+   <br/>
+	   <hr/>
+	   <h3><a href="../index.html">Go to index</a></h3>
+ </body>
+</html>
