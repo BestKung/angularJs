@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="../angular-group/angular.js"></script>
+  <script src="../js/module-service-input.js"></script>
+ </head>
+ <body ng-app="module-service-input">
+ <h1 style="font-size:50;text-align:center">Angular Service</h1>
+ <div ng-controller="serviceInputCotroller">
+   <label>Username : </label><input type="text" ng-model="user.username">
+   <br/>
+   <label>Password : </label><input type="text" ng-model="user.password">
+   <br/>
+   <button ng-click="sendData()">Send Data</button>
+   <br/>
+   <hr/>
+   <div ng-controller="serviceOutputController">
+   <button ng-click="showData()">Show Data</button>
+   <h3>Username : {{userService.username}}</h3>
+   <h3>Password : {{userService.password}}</h3>
+   </div>
+   </div>
+	   <hr/>
+	   <h3><a href="../index.html">Go to index</a></h3>
+ </body>
+</html>
